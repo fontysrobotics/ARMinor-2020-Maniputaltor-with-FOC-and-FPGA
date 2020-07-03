@@ -8,7 +8,6 @@ Aluminium extrusion was hosen for the frame, as this is lightweight, easy to acq
 The manipulator joints:
 
 For the manipulator joints, pre-built joints were found.
-
 These allow minimisation of cost anc omplexity, while achieving high performance.
 
 For more details on the components selected and he recommendations, please see the project report.
