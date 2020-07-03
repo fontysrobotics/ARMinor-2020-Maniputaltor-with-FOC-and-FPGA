@@ -1,4 +1,4 @@
-# Affordable Manipulator With FPGA-driven FOC? 
+# Affordable Manipulator With FPGA-driven FOC 
 
 
 ### Introduction 
