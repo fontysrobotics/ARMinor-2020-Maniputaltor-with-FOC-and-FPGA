@@ -16,4 +16,4 @@ Robotics can be prohibitively expensive and complex, preventing robotics student
 
 - **Simulation:** Within this folder you will find the simulation of the affordable manipulator in Unity. The project files for the communication between ROS and Unity, and the proof of concept of an GUI to interface with the simulation. 
 
-
+**There is a final report available in this repository, which is meant to be the compiled version of our results and findings**
