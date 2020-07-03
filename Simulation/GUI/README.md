@@ -13,5 +13,18 @@ Goals:
 This project uses Tkinter as it supports different architectures. This toolkit is beginner friendly 
 but also offers advanced features. 
 
+## How to start
+In order to start the UI you need to start the main_window.py with python 2. 
+
+`` python src/gui/main_window.py ``
+
+To run the guy you need to have `pillow` and `rospy` installed. You can install pillow by running.
+`` pip install pillow ``
+
+To install rospy please refer to installation of ROS. 
+
+To run the unity simulation refer to the Simulation folder in this repository.
+
+
 ## Work in progress
 This project is still in the early stage of development.
