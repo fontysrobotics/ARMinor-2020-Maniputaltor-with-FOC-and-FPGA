@@ -25,5 +25,6 @@ the following packages from the ROS repositories are required:
 
 ## Unity project setup
 All unity simulation setup instructions including setting up a robot and all communications between ROS and Unity are documented in a separate document as this is quite extensive.
+See: [Unity Project Setup](UnitySetup.md)
 
 ## Graphical User-interface

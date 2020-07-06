@@ -4,3 +4,4 @@ This directory contains all the documentation for using and developing the Unity
 
 ## Contents
 - [Installation and Environment setup](Installation.md)
+- [Unity Project Setup](UnitySetup.md)
