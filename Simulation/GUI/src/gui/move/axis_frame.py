@@ -13,6 +13,8 @@ class AxisFrame(Tk.Frame):
          #:keyword
          """
         self._angle = 0
+        self._current_rot = 0
+        self._prev_set_angle = 0
         self._min_angle = min_angle
         self._max_angle = max_angle
 
@@ -43,14 +45,30 @@ class AxisFrame(Tk.Frame):
         self._right_btn.pack(side=Tk.LEFT)
 
     def set_angle(self, angle):
+        """ sets the angle indicator of the joint """
         if not self._min_angle <= angle <= self._max_angle:
             raise ValueError("Given angle {}".format(angle) +
                              " is not between {} and {}!".format(self._min_angle, self._max_angle))
 
-        self._angle = angle
+        self._calc_current_rot(angle)
+        self._angle = self._current_rot * self._max_angle + angle  # determine actual angle based on current rotation
+
         self._angle_slider_indicator.config(state=Tk.NORMAL)
-        self._angle_slider_indicator.set(angle)
+        self._angle_slider_indicator.set(self._angle)
         self._angle_slider_indicator.config(state=Tk.DISABLED)
+
+    def _calc_current_rot(self, angle):
+        """ The simulations "encoders" only report the absolute angle of the joint,
+            however these joints can spin for more than 360 degrees, so you need to keep
+            track of the current rotation in order to correctly report the angle on the slider.
+            #:param angle: the negative difference between the reset and current joint position """
+        if self._current_rot == 0 and self._prev_set_angle > -2 and angle < -357:
+            self._current_rot = 1
+
+        if self._current_rot == 1 and self._prev_set_angle < -357 and angle > -2:
+            self._current_rot = 0
+
+        self._prev_set_angle = angle
 
     def get_angle(self):
         return self._angle_slider_indicator.get()
