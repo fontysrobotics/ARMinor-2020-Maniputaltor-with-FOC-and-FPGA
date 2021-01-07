@@ -6,7 +6,12 @@
 Robotics can be prohibitively expensive and complex, preventing robotics students from learning about them. The goal of this project was to design an affordable, easy to use robot arm that would help solve these problems. The project was split into four parts: the electrical design, the mechanical design, the Field Oriented Control (FOC) implementation, and the simulation. Each of these projects' parts will be discussed in order below.
 
 
-**This project is one of the deliverables of the [ROSIN EP FREROS project](https://www.rosin-project.eu/ftp/freros). It was developed for the Adaptive Robotics minor of Fontys University of Applied Sciences which aims to be one of the best ROS and Robotics education center's in the Netherlands.**
+**This repository supports trainings at the ROS-Industrial training centre at Fontys University of Applied Sciences for the Adaptive Robotics minor ([ROSIN EP FREROS project](https://www.rosin-project.eu/ftp/freros))**
+
+**This Educational Project has received funding from the European Union's Horizon 2020 research and innovation programme under the project ROSIN with the grant agreement No 732287.**
+
+![alt text](https://github.com/fontysrobotics/ARMinor-2020-Opensource-Virtual-Learning-Environment-AROVLE/blob/master/Tutorial_Files/images/logo_rosin.png)
+
 
 ### Project structure
 
